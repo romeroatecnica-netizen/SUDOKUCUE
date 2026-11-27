@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SudokuCue — Competitive Sudoku Challenge &amp; WhatsApp Duel Game</title>
+    <meta
+      name="description"
+      content="Challenge friends to a 9x9 Sudoku duel via WhatsApp link. Play the exact same board encoded in the URL, beat their time, hints, and score—100% client-side."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://sudokucue.bastelar.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://sudokucue.bastelar.com/" />
+    <link rel="alternate" hreflang="en" href="https://sudokucue.bastelar.com/" />
+    <link rel="alternate" hreflang="es" href="https://sudokucue.bastelar.com/?lang=es" />
+    <link rel="alternate" hreflang="fr" href="https://sudokucue.bastelar.com/?lang=fr" />
+    <link rel="alternate" hreflang="de" href="https://sudokucue.bastelar.com/?lang=de" />
+    <link rel="alternate" hreflang="pt" href="https://sudokucue.bastelar.com/?lang=pt" />
+    <link rel="alternate" hreflang="ar" href="https://sudokucue.bastelar.com/?lang=ar" />
+    <link rel="alternate" hreflang="hi" href="https://sudokucue.bastelar.com/?lang=hi" />
+    <link rel="alternate" hreflang="ru" href="https://sudokucue.bastelar.com/?lang=ru" />
+    <link rel="alternate" hreflang="zh" href="https://sudokucue.bastelar.com/?lang=zh" />
+    <link rel="alternate" hreflang="ja" href="https://sudokucue.bastelar.com/?lang=ja" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SudokuCue" />
+    <meta property="og:url" content="https://sudokucue.bastelar.com/" />
+    <meta property="og:title" content="SudokuCue — Competitive Sudoku Challenge &amp; WhatsApp Duel Game" />
+    <meta
+      property="og:description"
+      content="Challenge friends to a 9x9 Sudoku duel via WhatsApp link. Play the exact same board encoded in the URL, beat their time, hints, and score—100% client-side."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SudokuCue — Competitive Sudoku Challenge &amp; WhatsApp Duel Game" />
+    <meta
+      name="twitter:description"
+      content="Challenge friends to a 9x9 Sudoku duel via WhatsApp link. Beat friends' times, hints, and scores with zero signup."
+    />
+    <meta name="theme-color" content="#1E40AF" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script id="sudokucue-jsonld" type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebApplication",
+            "name": "SudokuCue — Competitive Sudoku Challenge & WhatsApp Duel Game",
+            "url": "https://sudokucue.bastelar.com/",
+            "applicationCategory": "GameApplication",
+            "genre": "Logic Puzzle, Sudoku",
+            "operatingSystem": "All",
+            "inLanguage": ["en", "es", "fr", "de", "pt", "ar", "hi", "ru", "zh", "ja"],
+            "description": "Challenge friends to a 9x9 Sudoku duel via WhatsApp link. Play the exact same board encoded in the URL, beat their time, hints, and score—100% client-side.",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          },
+          {
+            "@type": "HowTo",
+            "name": "How to Send and Beat a Sudoku Challenge Link on WhatsApp",
+            "step": [
+              {
+                "@type": "HowToStep",
+                "name": "Select difficulty and solve",
+                "text": "Pick Easy, Medium, or Hard and solve the deterministic 9x9 Sudoku puzzle using Notes mode and systematic scanning."
+              },
+              {
+                "@type": "HowToStep",
+                "name": "Share challenge via WhatsApp or link",
+                "text": "Click Challenge on WhatsApp or Copy Challenge Link to encode the exact puzzle seed, difficulty, time, hints, and score in the URL."
+              },
+              {
+                "@type": "HowToStep",
+                "name": "Compare results and send a rematch",
+                "text": "Your friend plays the identical grid in their browser, compares seconds, hints, and points side by side, and sends back a rematch."
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How does a WhatsApp Sudoku challenge link work without a backend?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "SudokuCue encodes the deterministic puzzle seed, difficulty, language, and challenger stats directly inside the #c= URL fragment so both players load the exact same 9x9 board locally."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do hints affect my Sudoku duel score?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Each hint reveals one cell and applies a transparent -150 point deduction and +30s time impact, rewarding clean deduction without hints."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="bg-[#F8FAFC] text-slate-900 antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

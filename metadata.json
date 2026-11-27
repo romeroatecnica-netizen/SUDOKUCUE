@@ -1,0 +1,6 @@
+{
+  "name": "SudokuCue — Competitive Sudoku Challenge & WhatsApp Duel Game",
+  "description": "Play deterministic 9x9 Sudoku puzzles and send shareable WhatsApp challenge links encoded in the URL to beat friends' times, hints, and scores—100% client-side.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

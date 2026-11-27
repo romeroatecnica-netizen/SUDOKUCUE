@@ -1,0 +1,207 @@
+import type { TranslationBundle } from '../types';
+
+export const ja: TranslationBundle = {
+  seo: {
+    title: 'SudokuCue — 対戦型数独チャレンジ＆WhatsAppデュエル',
+    description:
+      'WhatsAppリンクで友達と同じ9×9数独盤面に対戦挑戦。URLに盤面・タイム・ヒント・スコアをエンコードし、サーバー不要・完全ローカルで勝負できます。',
+    howToName: 'WhatsAppリンクで数独チャレンジを送って競う方法',
+    howToSteps: [
+      {
+        name: '難易度を選んで9×9盤面を解く',
+        text: '初級・中級・上級から選び、メモモードを活用して唯一解の数独を解きます。',
+      },
+      {
+        name: 'WhatsAppで#c=挑戦リンクを送る',
+        text: 'シード値・難易度・秒数・ヒント数・スコアをURLに記録して友達へ共有します。',
+      },
+      {
+        name: 'スコアを比較してリマッチを送る',
+        text: '友達が同じ盤面を解き終えるとタイムとスコアが直接比較され、再戦リンクを送れます。',
+      },
+    ],
+  },
+  nav: {
+    play: '対戦プレイ',
+    duelGuide: '対戦ガイド',
+    stats: '記録・JSON',
+    faq: 'FAQ',
+    languageLabel: '言語',
+  },
+  hero: {
+    h1: '対戦型数独チャレンジ＆WhatsAppデュエル',
+    subtitle:
+      '決定論的9×9数独を解き、タイム・ヒント・スコアをURLにエンコードしてWhatsAppで友達に挑戦しよう。',
+  },
+  game: {
+    easy: '初級',
+    medium: '中級',
+    hard: '上級',
+    newBoard: '新しい盤面',
+    dailyDuel: 'デイリー対戦',
+    printSheet: '印刷',
+    soundOn: '効果音オン',
+    soundOff: 'ミュート',
+    boardSeed: '盤面ID',
+    time: 'タイム',
+    hints: 'ヒント',
+    filled: '入力済',
+    score: 'スコア',
+    conflicts: '重複',
+    normalMode: '通常',
+    notesMode: 'メモ',
+    erase: '消去',
+    undo: '戻す',
+    check: 'チェック',
+    hintButton: 'ヒント',
+    hintCostLabel: '-150点 · +30秒',
+    checkOk: '入力された数字はすべて唯一解と一致しています。',
+    checkErrors: '{count} マスが正解と一致しません（1マス -40点）。',
+    solvedBannerTitle: 'クリア達成！',
+    solvedBannerSub: '記録が確定しました。WhatsAppやリンクで挑戦状を送れます。',
+    pause: '一時停止',
+    resume: '再開',
+    pausedOverlay: 'タイマー停止中 — 再開をクリックして続けます。',
+    keyboardTip: '操作: 1–9入力 · 矢印移動 · Nメモ · Z戻す · Hヒント · Del消去',
+  },
+  svg: {
+    title: 'SudokuCue 対戦・進捗図解',
+    quadrantMap: '3×3ブロック達成状況',
+    duelBenchmark: 'タイム＆スコア比較',
+    you: 'あなた',
+    target: '対戦相手',
+    openTarget: '同時対戦',
+    remaining: '残り',
+    hinted: 'ヒント',
+  },
+  duel: {
+    cardTitle: 'WhatsApp＆リンク挑戦',
+    activeDuelTitle: '届いた数独チャレンジ',
+    openDuelTitle: '共有盤面デュエル',
+    challengerLabel: '挑戦者',
+    anonymousChallenger: '友達',
+    roundLabel: 'ラウンド',
+    nicknameLabel: 'あなたの名前（任意）',
+    nicknamePlaceholder: '例：ケンタ',
+    challengeWhatsApp: 'WhatsAppで挑戦する',
+    copyLink: '挑戦リンクをコピー',
+    copied: 'コピー完了',
+    sendRematch: 'リマッチを送る',
+    shareVictoryBack: '結果を返す',
+    playFreshSolo: '対戦を終了',
+    beatTargetHint: '同じ盤面で {time} · ヒント{hints}回 · {score}点を上回ろう。',
+    liveCompareHint: '同一シードを読み込み済み。クリアすると相手と結果を比較できます。',
+    outcomeWin: '勝利 — 挑戦記録を上回りました！',
+    outcomeTie: '完全な引き分け！',
+    outcomeLoss: 'このラウンドは相手がリード',
+    outcomePending: 'クリア完了 — 記録保存済み',
+    timeDeltaFaster: '相手より {sec}秒速い',
+    timeDeltaSlower: '相手より {sec}秒遅い',
+    timeDeltaEqual: 'タイムが完全一致',
+    whatsappMessageSolved:
+      'SudokuCue（{diff}）を {time} でクリア（ヒント{hints}回、{score}点）！まったく同じ盤面で勝てるか挑戦して： {url}',
+    whatsappMessageOpen:
+      'SudokuCue（{diff}）の同じ盤面でタイムアタック勝負しよう！リンクを開くとスタート： {url}',
+    whatsappMessageRematch:
+      'SudokuCue リマッチ（第{round}戦）！新しい {diff} 盤面を用意したよ： {url}',
+  },
+  stats: {
+    sectionTitle: 'ローカル記録・対戦履歴＆JSONバックアップ',
+    streak: '連勝',
+    totalSolved: 'クリア数',
+    duelsWon: '対戦勝利',
+    bestTime: 'ベストタイム',
+    bestScore: 'ハイスコア',
+    noRecord: '—',
+    exportJson: 'JSON出力',
+    importJson: 'JSON読込',
+    importSuccess: 'JSONバックアップを読み込みました。',
+    importError: '無効なJSONファイルです。',
+    historyTitle: '最近のプレイと対戦履歴',
+    historyEmpty: '9×9盤面またはWhatsApp対戦をクリアするとここに記録されます。',
+    clearHistory: '履歴削除',
+    dateCol: '日付',
+    diffCol: '難易度',
+    timeCol: 'タイム',
+    hintsCol: 'ヒント',
+    scoreCol: 'スコア',
+    resultCol: '対戦',
+  },
+  editorial: {
+    guideTitle: 'WhatsApp数独チャレンジの遊び方と攻略ガイド',
+    guideLead: 'アカウント登録やサーバーなしで、リンクひとつで友達と公平な数独タイムアタック。',
+    articles: [
+      {
+        title: '1. WhatsAppリンクで同じ数独を競う仕組み',
+        body: [
+          'SudokuCueのすべての盤面は数値シードと難易度から決定論的に生成されます。共有リンクの#c=内にシード・時間・ヒント・スコアが含まれるため、相手のブラウザでも同一の9×9盤面が再現されます。',
+        ],
+      },
+      {
+        title: '2. メモ機能とスキャンで初級〜上級を高速攻略',
+        body: [
+          '出現頻度の高い数字から縦横スキャンし、候補が絞れたらメモモード（Nキー）で記録しましょう。確定数字を入れると関連マスの不要なメモが自動消去されます。',
+        ],
+      },
+      {
+        title: '3. ヒントのペナルティを避けて勝利する',
+        body: [
+          'ヒント1回につき150点減点（+30秒相当）が課されます。残り2マスの行やブロックを先に確認することでノーヒント高得点を維持できます。',
+        ],
+      },
+    ],
+    faqTitle: 'よくある質問',
+    faqs: [
+      {
+        q: 'サーバーなしで同じ問題になるのはなぜですか？',
+        a: 'URLの#c=ハッシュに盤面シードと難易度を保存し、各端末のブラウザ上で同一アルゴリズムが盤面を生成するためです。',
+      },
+      {
+        q: 'スコア計算式を教えてください。',
+        a: '基本点（初級1000／中級1800／上級2800）から1秒ごとに2点、ヒント1回150点、チェック誤り1箇所40点を減算します。',
+      },
+      {
+        q: '紙に印刷したり記録を保存できますか？',
+        a: 'はい。「印刷」ボタンできれいなA4印刷ができ、JSON出力/読込でバックアップも可能です。',
+      },
+    ],
+    transparencyNotice:
+      'WhatsApp共有リンク対応の100%クライアントサイド対戦型数独ゲームです。対戦データはサーバーを使わずURLにエンコードされ、タイム・連勝・メモはAI API呼び出しなしでブラウザ内にローカル保存されます。',
+    gearTitle: 'おすすめ数独本・論理パズル用品',
+    gearSubtitle: '紙でのトレーニングや対面のタイムアタックに便利なアイテム。',
+    gearItems: [
+      {
+        category: 'パズル本',
+        title: '上級・達人向け数独ノート',
+        description: '鉛筆でのメモ書きと消しゴムに強い厚手用紙のパズルブック。',
+        cta: 'パズル本を見る',
+      },
+      {
+        category: 'ボードゲーム',
+        title: '友達と遊べる推理・論理ボードゲーム',
+        description: '2〜6人で白熱する思考力・推理系テーブルゲーム。',
+        cta: 'ゲームを探す',
+      },
+      {
+        category: '文房具',
+        title: '0.5mm 精密シャープペンシル',
+        description: '小さいマス目にも候補メモを鮮明に書ける製図用シャープペン。',
+        cta: 'ペンを見る',
+      },
+      {
+        category: 'タイマー',
+        title: '卓上デジタル対局タイマー',
+        description: '紙の数独スピード勝負に最適な卓上タイマー。',
+        cta: 'タイマーを見る',
+      },
+    ],
+  },
+  footer: {
+    canonicalNote: '正規ドメイン: https://sudokucue.bastelar.com',
+    privacyNote: 'トラッキングなし · ブラウザ内ローカル保存のみ',
+  },
+  print: {
+    subtitle: '印刷用 9×9 チャレンジシート',
+    instructions: 'すべての行・列・3×3ブロックに1〜9の数字を重複なく入れてください。',
+  },
+};
